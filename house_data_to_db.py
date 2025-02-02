@@ -24,7 +24,7 @@ def extract_data():
 def transform_data(df):
     #todo: Implement more filters such as address, bedrooms, bathrooms
 
-    # I only want to find houses in a specific zip code & the value.
+    # filter by houses in a specific zip code & the value.
     df = df.loc[:, ["value", "zip"]]
 
     # Filter by houses under 1 million
@@ -61,9 +61,3 @@ if __name__ == "__main__":
     main()
 
 #todo: Implement poetry for dependency management
-
-
-
-
-
-
