@@ -25,10 +25,10 @@ def transform_data(df):
     #todo: Implement more filters such as address, bedrooms, bathrooms
 
     # filter by houses in a specific zip code & the value.
-    df = df.loc[:, ["value", "zip"]]
+    df = df.loc[:, ["value", "rooms"]]
 
     # Filter by houses under 1 million
-    df = df.loc[(df["value"] < 1000000) & (df["zip"] == 90003), ["value", "zip"]]
+    df = df.loc[(df["value"] < 1000000) & (df["rooms"] > 2), ["value", "rooms"]]
     return df
 
 # Load
@@ -61,3 +61,6 @@ if __name__ == "__main__":
     main()
 
 #todo: Implement poetry for dependency management
+#todo: set up airflowpoetry
+#todo: install poetry for dependnecies
+#todo: use a free api for the data
