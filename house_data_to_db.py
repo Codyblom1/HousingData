@@ -63,4 +63,3 @@ if __name__ == "__main__":
 #todo: Implement poetry for dependency management
 #todo: set up airflowpoetry
 #todo: install poetry for dependnecies
-#todo: use a free api for the data
